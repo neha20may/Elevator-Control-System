@@ -1,7 +1,9 @@
 package elevator.simulate;
 
-import elevator.impl.Elevator;
-import elevator.impl.ElevatorControlSystem;
+import ecs.impl.Elevator;
+import ecs.impl.ElevatorControlSystem;
+//import elevator.impl.Elevator;
+//import elevator.impl.ElevatorControlSystem;
 
 /**
  * Created by Arun Singh on 4/3/16.
@@ -10,8 +12,8 @@ public class ElevatorSimulation {
 
     public static void main(String[] args) {
 
-        ElevatorControlSystem elevatorControlSystem = new ElevatorControlSystem(16);
-        for(int i = 1; i <= 18; i++){
+        ElevatorControlSystem elevatorControlSystem = new ElevatorControlSystem(2);
+        for(int i = 1; i <= 5; i++){
             elevatorControlSystem.pickUpRequest(i);
         }
 

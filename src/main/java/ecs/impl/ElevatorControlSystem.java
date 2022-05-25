@@ -27,7 +27,7 @@ import ecs.enums.ElevatorStatus;
 
 public class ElevatorControlSystem implements IElevatorControlSystem {
 
-    private static final int MAX_ELEVATORS = 16;
+    private static final int MAX_ELEVATORS = 2;
     private Elevator[] elevators;
     private final int elevatorCount;
     /*
